@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  background-color: #ff6c6c;
+  background-image:
+    radial-gradient(at 47% 33%, hsl(0.00, 100%, 84%) 0, transparent 59%),
+    radial-gradient(at 82% 65%, hsl(0.00, 100%, 82%) 0, transparent 55%);
+  font-family: system-ui, sans-serif;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

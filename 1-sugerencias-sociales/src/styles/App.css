@@ -1,0 +1,78 @@
+.suggestionCard {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-size: .8rem;
+  justify-content: space-between;
+  background-color: rgba(255, 160, 160, 0.32);
+  border-radius: 12px;
+  border: 1px solid rgb(255, 226, 226);
+  padding: 15px;
+}
+
+.suggestionCard-header {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.suggestionCard-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.suggestionCard-infoUserName {
+  opacity: .5;
+}
+
+.suggestionCard-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 1000px;
+}
+
+.suggestionCard-button {
+  cursor: pointer;
+  margin-left: 40px;
+  border: 0;
+  border-radius: 1000px;
+  padding: 6px 16px;
+  font-weight: bold;
+  transition: .3 ease background-color;
+}
+
+.suggestionCard-button:hover {
+  opacity: .8;
+}
+
+.suggestionCard-text {
+  display: block;
+}
+
+.suggestionCard-text.isFollowing {
+  border: 1px solid #bbb;
+  background: transparent;
+  color: #fff;
+  width: 140px;
+}
+
+.suggestionCard-button.isFollowing:hover {
+  background-color: #ffffff31;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-weight: bolder;
+  transition: .3s ease all;
+  opacity: 1;
+}
+
+.suggestionCard-button.isFollowing:hover .suggestionCard-text {
+  display: none;
+}
+
+.suggestionCard-button.isFollowing:hover .suggestionCard-stopFollow {
+  display: block;
+}
+
+.suggestionCard-stopFollow {
+  display: none;
+}
